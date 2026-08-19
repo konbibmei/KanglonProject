@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kanglon - Educational resources and downloadable study materials for Classes 7 to 10.">
+  <title>Kanglon | Educational Resources</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    <div class="brand">
+      <div class="logo">K</div>
+      <span>Kanglon</span>
+    </div>
+    <nav class="desktop-nav">
+      <a href="#home">Home</a>
+      <a href="#downloads">Downloads</a>
+      <a href="#about">About Me</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <aside class="side-menu" id="sideMenu">
+    <button class="close-btn" id="closeBtn">×</button>
+    <a href="#home">Home</a>
+    <a href="#downloads">Downloads</a>
+    <a href="#about">About Me</a>
+    <a href="#contact">Contact</a>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <main id="home">
+    <!-- Row 2: Images -->
+    <section class="hero-images" aria-label="Educational highlights">
+      <div class="hero-card hero-one">
+        <div>
+          <span class="eyebrow">LEARN • EXPLORE • GROW</span>
+          <h1>Learning made simple.</h1>
+          <p>Study materials designed to help students understand concepts clearly and learn with confidence.</p>
+          <a class="hero-btn" href="#downloads">Explore Downloads</a>
+        </div>
+      </div>
+      <div class="hero-card hero-two">
+        <div class="image-overlay">
+          <strong>Classes 7–10</strong>
+          <span>Notes • Chapters • Practice</span>
+        </div>
+      </div>
+      <div class="hero-card hero-three">
+        <div class="image-overlay">
+          <strong>Local Learning</strong>
+          <span>English • Manipuri • More</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Row 3: Messages -->
+    <section class="messages">
+      <div class="message">
+        <span class="message-icon">📘</span>
+        <div><h3>Learn Better</h3><p>Clear and organised study resources for every chapter.</p></div>
+      </div>
+      <div class="message">
+        <span class="message-icon">⚡</span>
+        <div><h3>Download Easily</h3><p>Choose your class, subject and chapter in a few taps.</p></div>
+      </div>
+      <div class="message">
+        <span class="message-icon">🎯</span>
+        <div><h3>Stay Focused</h3><p>Build strong fundamentals and prepare with confidence.</p></div>
+      </div>
+    </section>
+
+    <!-- Row 4: Downloads -->
+    <section class="downloads-section" id="downloads">
+      <div class="section-heading">
+        <span class="eyebrow">STUDY MATERIALS</span>
+        <h2>Downloads</h2>
+        <p>Select a class, subject and chapter to access the required PDF.</p>
+      </div>
+
+      <div class="class-tabs" id="classTabs">
+        <button class="class-tab active" data-class="7">Class 7</button>
+        <button class="class-tab" data-class="8">Class 8</button>
+        <button class="class-tab" data-class="9">Class 9</button>
+        <button class="class-tab" data-class="10">Class 10</button>
+      </div>
+
+      <div class="download-panel">
+        <div class="step">
+          <label>1. Choose Subject</label>
+          <div class="subject-grid" id="subjectGrid"></div>
+        </div>
+
+        <div class="step">
+          <label>2. Choose Chapter</label>
+          <select id="chapterSelect">
+            <option value="">Select a chapter</option>
+          </select>
+        </div>
+
+        <div class="selected-resource" id="selectedResource">
+          <div>
+            <span class="pdf-icon">PDF</span>
+            <div>
+              <strong id="resourceTitle">Choose a chapter</strong>
+              <p id="resourceMeta">Your download will appear here.</p>
+            </div>
+          </div>
+          <a id="downloadBtn" class="download-btn disabled" href="#" aria-disabled="true">Download PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about-section" id="about">
+      <div class="about-photo">K</div>
+      <div>
+        <span class="eyebrow">ABOUT ME</span>
+        <h2>Welcome to Kanglon.</h2>
+        <p>Kanglon is an educational resource platform created to make quality learning materials easier to find and use.</p>
+        <p>The goal is simple: provide students with organised chapter-wise resources that can be accessed anytime, on a phone or computer.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact -->
+  <footer id="contact">
+    <div class="footer-main">
+      <div>
+        <div class="footer-brand"><div class="logo">K</div><strong>Kanglon</strong></div>
+        <p>Simple resources. Better learning.</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+        <p>Phone: <a href="tel:+910000000000">+91 00000 00000</a></p>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <p><a href="#" aria-label="Facebook">Facebook</a> · <a href="#" aria-label="Instagram">Instagram</a> · <a href="#" aria-label="YouTube">YouTube</a></p>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Kanglon. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
